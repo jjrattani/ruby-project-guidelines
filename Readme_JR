@@ -1,0 +1,142 @@
+# Phashun Welrd - A Clothing Store CLI App
+​
+## Models & Relationships
+### Item -< Purchase >- User
+​
+#An Item has many Purchases
+#An Item has many Users through Purchases
+​
+#A User has many Purchases
+#A User has many Items through Purchases
+​
+#A Purchase belongs to a User
+#A purchase Belongs to an Item
+​-----------------------------------
+# The Time Now - A Tracking CLI App
+​
+## Models & Relationships
+### Item -< Purchase >- User
+
+User has many Workouts
+User has many Routes through Workouts
+
+Route has many Workouts
+Route has many Users through Workouts
+
+A Workout belongs to a Route
+A Workout belongs to an User
+​
+---------------------------------------
+​
+## User Stories: 
+​
+### MVP:
+#* User can log in and return to cart
+#* User will be able to browse clothing store for clothing
+#* User can purchase an item
+#* User should have cart with total items and total ticket
+#* Clothing store should update stock if user selects a piece 
+    
+# Stretch Goals:
+* Items have/display multiple sizes and colors
+* User can search for specific clothing items
+* User can enter a discount code at purchase
+* User can return and item of clothing
+* Exit message that ends the program
+​
+​
+---------------------------------------   
+​
+## Class Instance Variables
+​
+### Clothing Item Properties: (has a purchase, has a user through a purchase)
+* name
+* cost
+* size
+* stock
+​
+### Purchase (belongs to item(s) and user)
+* has user id 
+* has item id(s)
+​
+### User Properties: (has many purchases, has many clothing items through purchases)
+* Username  
+* Password
+
+------------------------***********************************----------------------------
+
+# The Time Now - A Tracking CLI App
+​
+## Models & Relationships
+### Route -< Workout >- User
+
+
+User has many Workouts 
+User has many Routes through Workouts
+
+
+Route has many Workouts
+Route has many Users through Workouts
+
+
+A Workout belongs to a Route
+A Workout belongs to an User
+
+---------------------------------------------------
+
+
+-A user can log in view all of thier workout history and stats
+-A user can browse route for workout
+-A record a workout route
+-User can view total stats of a workout(average speed, caloires burnt, distance, elevevation gain/lost)
+-The app shoud update routes based on user feedback
+
+
+-Routes have multiple distances, terrain and elevation change
+-Users can have different weights, gender
+-App can output top 5 times for a route
+-App an output most active User
+-App can calculate calories burned
+-Users can add new routes
+-Puts exit message
+
+----------------------------------------------------
+
+## Models & Relationships
+### Item -< Purchase >- User
+
+User has many Workouts
+User has many Routes through Workouts
+
+Route has many Workouts
+Route has many Users through Workouts
+
+A Workout belongs to a Route
+A Workout belongs to an User
+
+#Class Instance Variables
+
+###User has many Workouts 
+-Name
+-Weight
+-Height
+-Gender
+
+##Workout
+-User_id
+-Route_id
+-Type(Walk, Run, Bike)
+-Completed/Number of Laps
+-Rating
+-Comments
+
+##Route
+-Name
+-Distance(km/miles)
+-Elevation
+-Terrain(Road,Gravel,etc)
+
+
+
+
+
